@@ -1,16 +1,77 @@
-"Salut tout le monde"
-"Salut tout le monde"
-"On va boire une ?"
+<html lang="fr"><head>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page avec une image</title>
-</head>
-<body>
-    <h1>Image à partir de GitHub</h1>
-    <img src="couca" alt="Description de l'image">
-</body>
-</html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Présentation</title>
+    
+    <style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial,sans-serif;
+  background-color: #3366ff;
+  color: #333333;
+}
+.container {
+  margin: 100px auto;
+  padding: 20px;
+  max-width: 800px;
+  text-align: center;
+  background-color: #ffffff;
+}
+.container:hover {
+}
+h1 {
+  margin-top: 50px;
+  font-size: 36px;
+  color: #333333;
+}
+p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #555555;
+}
+ul {
+  text-align: center;
+  padding-left: 0;
+}
+li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover {
+  color: #0056b3;
+}
+.back-btn {
+  border:  none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  cursor: pointer;
+}
+.back-btn:hover {
+  background-color: #0056b3;
+}
+
+</style></head><body>
+    <div class="container">
+        <h1><big>Présentation :</big></h1>
+        <h2><big>Praz Fabien</big></h2>
+        <p>Date de naissance : 23.01.1984</p>
+        <p>Email: prazfab@gmail.com</p>
+        <p>Téléphone Mobile : 079 / 828.65.92</p>
+        <p>Rue : Route de la Vernaz 15</p>
+        <p>NPA/Lieu : 1992 LaVernaz (Les Agettes)</p>
+        <ul style="color: rgb(102, 0, 204);">
+            <h3>Logisticien CFC</h3>
+            <h3>Opérateur de laboratoire</h3>
+            <h3>Diagnostiqueur des polluants du bâtiment</h3>
+        </ul>
+        <button class="back-btn" onclick="window.location.href = '/';">Retour à l'accueil</button>
+    </div>
+</body></html>
