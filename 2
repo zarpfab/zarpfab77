@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Mon CV</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #000000, #6a0dad); /* Dégradé de noir à violet */
+            color: #8a8a8a;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            margin-top: 70px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .experience {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .experience-item {
+            width: calc(50% - 10px);
+            margin-bottom: 10px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        .experience-item .image-container {
+            width: 30%; /* Réserve une largeur fixe pour l'image */
+            flex-shrink: 0; /* Empêche le rétrécissement de la largeur de l'image */
+            margin-right: 10px; /* Ajoute un espacement entre l'image et le texte */
+        }
+        .experience-item .image-container img {
+            width: 100%; /* Pour que l'image remplisse entièrement son conteneur */
+            border-radius: 5px; /* Ajoute des coins arrondis à l'image */
+        }
+        .experience-item .text-container {
+            flex-grow: 1; /* Permet au texte de remplir l'espace restant */
+        }
+        .experience-item strong {
+            display: block; /* Pour placer chaque étiquette sur une ligne différente */
+            margin-bottom: 5px; /* Ajoute un espacement entre chaque étiquette */
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .back-btn:hover {
+            background-color: #0056b3;
+        }
+        .art-degrade h3 {
+            background: linear-gradient(to right, #d254e3, #efd5f2);
+	        -webkit-background-clip: text;
+	        -webkit-text-fill-color: transparent;
+	        font-size: 75px; !important; /* Définir la taille de la police */
+	        -webkit-text-stroke: 3px black; /* Ajouter une bordure noire autour du texte */
+	        text-shadow: 2px 2px 0 orange; /* Ajouter une ombre orange */
+        }
+    </style></head><body>
+    <div class="container">
+        <div class="art-degrade">
+            <h3>Mon CV</h3>
+        </div>
+
+
+
+        <h2>Expérience professionnelle</h2>
+        <div class="experience">
+            <div class="experience-item">
+                <div class="image-container">
+                    <img src="https://chi01pap001files.storage.live.com/y4m3t7tlwOSIzlVdgGBRgiiiwzrSKiumP2UhpXBv1eL3FzaA2ERd5Hd4krRTr3xfCyoc4x1YR0Hp9MWSfPv9D3ngTIahH9N1cnALCq6tElFB0RgI8S1OIjP_AQeogYyLH0X7EshkYguqKAjDFS_C4XRSn87HBOZhcynWSEjSXU--KLalI0byUeHhKs57dJ3U5f3dmsFQUe9Le2yl1OXC2qmMtjIh3wvgEy7De4dzZ4OcN4?encodeFailures=1&amp;width=512&amp;height=512" alt="Image de La Poste">
+                </div>
+                <div class="text-container">
+                    <strong>Poste :</strong> Logisticien<br>
+                    <strong>Entreprise :</strong> La Poste CH<br>
+                    <strong>Lieu :</strong> Sion / Sierre<br>
+                    <strong>Durée :</strong> 3 ans
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="image-container">
+                    <img src="https://chi01pap001files.storage.live.com/y4magWLMRjKxvjV_Ft3ynOmzSJSgnbMBJwCME1PUPoMDP-U9n28HhVG93hjbs9FmFS60Beq-ipXwAsadJiaPVvUqZP0AROgz5nRmQlNyEL-oS238EiDgTFhbH5h1pxTXDtt8yUNSmSFIBlMSzfiF8YFm1vGO-PMuDPcbhYO14RdTQReK2LC_ypy8UCjDWFknVyBtrb7i-7CyIQAgfPl2X8EcBmGZQ7W-HIf6WiHLRx2BU0?encodeFailures=1&amp;width=500&amp;height=208">
+                </div>
+                <div class="text-container">
+                    <strong>Poste :</strong> Aide mécanicien<br>
+                    <strong>Entreprise :</strong> Neige Exploitation<br>
+                    <strong>Lieu :</strong> Veysonnaz / Thyon<br>
+                    <strong>Durée :</strong> 4 ans
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="image-container">
+                    <img src="https://public.ch.files.1drv.com/y4mzYIVMKMQfxedX-DWIN1uXnlqHra7jivnLfriZ3b3dNqOiTAo5tU_37mAIvivDNcfCfax8_M1HwaULAGH7TCNKolu0PV8U-g8EpDCBOqENoTXYFAZv2aDVQ-Ake4BxMxPJOembqj8uZqEg4ucQ6NMLWSAq2ZJ5oHOTUdc7AyDt5qjT8lzaWJJGscQ1NctYTnwLuJIjJ6_UKt4_ShQagnGL00dbOum-mROadGHTpkHzKc">
+                </div>
+                <div class="text-container">
+                    <strong>Poste :</strong> Hydrodémolition<br>
+                    <strong>Entreprise :</strong> Sodian Gruppe AT<br>
+                    <strong>Lieu :</strong> Europe<br>
+                    <strong>Durée :</strong> 5 ans
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="image-container">
+                    <img src="https://chi01pap001files.storage.live.com/y4mgb6qXniQ-U_m2k34q8LdJNW6eXoqip29PjloFT_dOZj8Qn46qEQUXJsaMZNqoFWnvZ-aPTqmlGJ7vJqN2Rw2eCR1RnJz35zCQIgTiWufhy7Lxn_8hZGwPUMcRj4ZP8pV2FGx6zdHtFL3sPYO4nkmn4b88C-jq7GvU7nCd_t1xFd7v_yG5lHNu3322FPGKBFML-H7604kIjp8eFimLJzjYPy8wTAZ0wRvZ4hn398eHdg?encodeFailures=1&amp;width=494&amp;height=162">
+                </div>
+                <div class="text-container">
+                    <strong>Poste :</strong> Logisticien / vendeur<br>
+                    <strong>Entreprise :</strong> HORNBACH<br>
+                    <strong>Lieu :</strong> Riddes<br>
+                    <strong>Durée :</strong> 4 ans
+                </div>
+            </div>
+            <div class="experience-item">
+                <div class="image-container">
+                    <img src="https://chi01pap001files.storage.live.com/y4mWSJuDazMlXiZWXS_ZeuqfJV5nMgg5RzFp4isFQ6G-z0XjzOQLX0aMpUODw2OI1uVMEd1AjuxvaHRWYJ72AB9RFPuCe_b2lxY6q6tcrJmtJBKMsyqRuHFjUbG89jwRx6lnsPr0h1Nz9dUFwxy4gyvAcV6HAEANwokLdFVG_D03ZOBh8Ls6a9Jwx-0A_4kgkIyQjE7GTUoQj-aSMFFKU7EU_Lp0XlELydDAcpd6wjuKtE?encodeFailures=1&amp;width=494&amp;height=162">
+                </div>
+                <div class="text-container">
+                    <strong>Poste :</strong> Laborant Matériaux<br>
+                    <strong>Entreprise :</strong> BS Lucane / Labco<br>
+                    <strong>Lieu :</strong> Sion<br>
+                    <strong>Durée :</strong> 4 ans
+                </div>
+            </div>
+             <div class="experience-item">
+                <div class="image-container">
+                    <img src="https://chi01pap001files.storage.live.com/y4mXsWBIK4CEZe4j7uS7W5YsWAldD_Xcjq69bSTWH2tAREvZMEdh0DAH0tCfI-A-i9AzezddFukAT0VUwyp9MmBRBuBRycv2BRaMIGzuz0bZVZiYvQ8kttVv-eEgYTWmrfqnYeCRFg5KAWJfMP0qnjkUG6N1MVivI1U81GeyLqoRhSGSFYDtTrahnei3bIVAxWQ9qiVOmxsMYndBvc5UWXPmTy11gElUEJs6BwvtxAU2ws?encodeFailures=1&amp;width=200&amp;height=200">
+                </div>
+                <div class="text-container">
+                    <strong>Poste :</strong> Diagnostiqueur polluants<br>
+                    <strong>Entreprise :</strong> HSE Conseils SA<br>
+                    <strong>Lieu :</strong> Sion / Gland / Marin / GE <br>
+                    <strong>Durée :</strong> 1 ans
+                </div>
+            </div>
+        </div>
+
+        <h2>Formation :<br>
+</h2>
+
+        
+<ul>
+  <li>Ecole obligatoire</li>
+  <li>CFC de logisticien à La Poste CH de Sion</li>
+  <li>Contrôleur de matériaux formation TFB à Puidoux (VD)</li>
+  <li>Diagnostiqueur des polluants du bâtiment formation HSE Conseils SA à Gland</li>
+</ul>
+<ul>
+            
+            
+            
+            
+            <!-- Ajoutez autant de formations que nécessaire -->
+        </ul>
+
+        <h2>Langues :<br>
+</h2>
+        <ul>
+            
+  <li>Français Langue maternelle</li>
+
+            
+  <li>Allemand 5 ans en Suisse allemande</li>
+
+            <!-- Ajoutez autant de compétences que nécessaire -->
+        </ul>
+
+        <h2>Hobbies :<br>
+</h2>
+        <ul>
+            <li>Informatique</li>
+            <li>Chasse</li>
+            <li>Pêche</li>
+            <!-- Ajoutez autant de hobbies que nécessaire -->
+        </ul>
+
+        <h2>Informatique et autres connaissances :<br>
+</h2>
+        <ul>
+            <li>Informatique : Suite Office, Python, HTML, CSS, Programme de laboratoire, WWS/SAP</li>
+            <li>Permis cariste : Expérience de 4 ans - Timon, mat-rétractable, contrepoids.</li>
+            <!-- Ajoutez autant de hobbies que nécessaire -->
+        </ul>
+        <button class="back-btn" onclick="window.location.href = '/';">Retour à l'accueil</button>
+    </div>
+
+    <script>
+        // Aucun code Javascript n'est nécessaire pour cette fonctionnalité.
+    </script>
+</body></html>
