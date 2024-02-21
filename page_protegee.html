@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page protégée par mot de passe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('images/pic11.jpg'); /* Chemin relatif vers votre image */
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .login-container {
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 100px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input[type="password"] {
+            width: calc(100% - 40px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="button"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script>
+        function verifierMotDePasse(event) {
+            if (event.key === 'Enter' || event.keyCode === 13) {
+                var motDePasseSaisi = document.getElementById("motdepasse").value;
+                var motDePasseAttendu = "2301"; // Mot de passe attendu
+                if (motDePasseSaisi === motDePasseAttendu) {
+                    window.location.href = "index1.html"; // Redirection vers la page index.html
+                } else {
+                    alert("Mot de passe incorrect. Veuillez réessayer."); // Alerte en cas de mot de passe incorrect
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div class="login-container">
+    <h2 style="text-align: center;">Entrez votre mot de passe :</h2>
+
+    <input type="password" id="motdepasse" name="motdepasse" placeholder="Mot de passe" onkeypress="verifierMotDePasse(event)"><br>
+    <input type="button" value="Valider" onclick="verifierMotDePasse(event)">
+</div>
+
+</body>
+</html>
