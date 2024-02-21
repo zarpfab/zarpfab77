@@ -2,15 +2,19 @@
 <html>
 <head>
     <title>Page protégée par mot de passe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Pour le support des mobiles -->
     <style>
         body {
             font-family: Arial, sans-serif;
             background-image: url('images/pic11.jpg'); /* Chemin relatif vers votre image */
             background-size: cover;
             background-repeat: no-repeat;
+            margin: 0; /* Ajout pour supprimer les marges par défaut */
+            padding: 0; /* Ajout pour supprimer les paddings par défaut */
         }
         .login-container {
-            width: 300px;
+            width: 90%; /* Utilisation d'une largeur relative pour s'adapter à la taille de l'écran */
+            max-width: 400px; /* Limitation de la largeur maximale pour éviter une expansion excessive sur les grands écrans */
             margin: 0 auto;
             margin-top: 100px;
             background-color: #fff;
@@ -64,3 +68,4 @@
 
 </body>
 </html>
+
