@@ -1,0 +1,33 @@
+/*
+	Pour la page DESIGN
+*/
+
+header {
+    background-color: violet;
+    height: 500px;
+}
+
+/* Style pour centrer le texte */
+.center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Hauteur de l'en-tête */
+}
+
+/* Style pour la police personnalisée */
+.custom-font {
+    font-family: "OCR A Std", monospace;
+}
+
+/* Style pour la taille du texte */
+.custom-size {
+    font-size: 150px; /* Remplacez 24px par la taille de texte souhaitée */
+}
+
+
+/* Style pour la taille du texte */
+.st {
+    font-size: 100px; /* Remplacez 24px par la taille de texte souhaitée */
+}
